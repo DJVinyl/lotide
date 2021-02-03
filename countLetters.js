@@ -6,16 +6,18 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = function(string) {
+const countLetters = function (string) {
   const results = {};
   for (const letter of string) {
-    if (results[letter]) {
-      results[letter] += 1;
-    } else {
-      results[letter] = 1;
+    if (letter !== ' ') {
+      if (results[letter]) {
+        results[letter] += 1;
+      } else {
+        results[letter] = 1;
+      }
     }
   }
   return results;
 };
 
-console.log(countLetters("LHL"))
+console.log(countLetters("LHL test"))

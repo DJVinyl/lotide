@@ -13,7 +13,6 @@ const eqArrays = function(actual,expected) {
   return equalCondition;
 };
 
-
 const eqObjects = function(object1,object2) {
   let equalCondition = true;
   //This if statement may notbe neccessary due to eqArray function, however it is a quick check
@@ -27,10 +26,11 @@ const eqObjects = function(object1,object2) {
       for(let i = 0; i < keysObject1.length; i++)
       {
         let key = keysObject1[i];
-        let valueActual = object1[key]
-        let valueExpected = object2[key];
-        if (valueActual !== valueExpected){
+        let valueObject1 = object1[key]
+        let valueObject2 = object2[key];
+        if (valueObject1 !== valueObject2){
           equalCondition = false;
+          break;
         }
       }
     }

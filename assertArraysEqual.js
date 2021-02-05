@@ -5,7 +5,6 @@ const assertArraysEqual = function(actual, expected) {
   } else {
     equalCondition = false;
   }
-
   if (equalCondition === true) {
     return console.log(`👏 Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -27,3 +26,5 @@ const eqArrays = function(actual,expected) {
   }
   return equalCondition;
 };
+
+module.exports = assertArraysEqual, eqArrays;

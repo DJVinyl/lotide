@@ -10,25 +10,20 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const eqArrays = function(actual,expected){
+const eqArrays = function(actual,expected) {
   let equalCondition = true;
-  if (actual.length === expected.length)
-  {
-    for(let i = 0; i < actual.length; i++)
-    {
-      if (actual[i] !== expected[i])
-      {
+  if (actual.length === expected.length) {
+    for (let i = 0; i < actual.length; i++) {
+      if (actual[i] !== expected[i]) {
         equalCondition = false;
         break;
       }
     }
-  }
-  else
-  {
+  } else {
     equalCondition = false;
   }
   return equalCondition;
-}
+};
 
 //console.log(eqArrays([1, 2, 3], [1, 2, 3])) // => true
 // console.log(eqArrays([1, 2, 3], [3, 2, 1])) // => false

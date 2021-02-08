@@ -1,5 +1,3 @@
-const assertArrayEqual = require('./assertArrayEqual');
-
 const tail = function(arr) {
   if (arr.length === 0) {
     return undefined;
@@ -12,7 +10,4 @@ const tail = function(arr) {
   }
 };
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-
-
-assertArraysEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
+module.exports = tail;

@@ -1,4 +1,4 @@
-const countLetters = function (string) {
+const countLetters = function(string) {
   const results = {};
   for (const letter of string) {
     if (letter !== ' ') {
@@ -12,4 +12,4 @@ const countLetters = function (string) {
   return results;
 };
 
-console.log(countLetters("LHL test"))
+module.exports = countLetters;

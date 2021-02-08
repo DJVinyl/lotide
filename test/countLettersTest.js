@@ -1,5 +1,7 @@
-const countLetters = require('../countLetters');
+//const countLetters = require('../countLetters');
 const assert = require('chai').assert;
+const lotide = require('../index');
+const countLetters = lotide.countLetters;
 
 describe("#countLetters", () => {
   it("returns { L: 2, H: 1, t: 2, e: 1, s: 1 } for LHL test", () => {

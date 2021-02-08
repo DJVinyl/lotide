@@ -1,4 +1,5 @@
-const countOnly = require('../countOnly');
+const lotide = require('../index');
+const countOnly = lotide.countOnly;
 const assert = require('chai').assert;
 
 const firstNames = [

@@ -1,4 +1,5 @@
-const findKey = require('../findKey');
+const lotide = require('../index');
+const findKey = lotide.findKey;
 const assert = require('chai').assert;
 
 const constellations = {

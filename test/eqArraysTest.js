@@ -1,4 +1,5 @@
-const eqArrays = require('../eqArrays');
+const lotide = require('../index');
+const eqArrays = lotide.eqArrays;
 const assert = require('chai').assert;
 
 describe("#eqArrays", () => {

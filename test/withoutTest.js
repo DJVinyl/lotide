@@ -1,4 +1,5 @@
-const without = require('../without');
+const lotide = require('../index');
+const without = lotide.without;
 const assert = require('chai').assert;
 
 describe("#without", () => {

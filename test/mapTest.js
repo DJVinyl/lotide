@@ -1,4 +1,5 @@
-const map = require('../map');
+const lotide = require('../index');
+const map = lotide.map;
 const assert = require('chai').assert;
 
 describe("#map", () => {

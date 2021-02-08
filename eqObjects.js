@@ -1,4 +1,5 @@
-const eqArrays = require('./eqArrays');
+const lotide = require('../index');
+const eqArrays = lotide.eqArrays;
 
 const eqObjects = function(object1,object2) {
   let equalCondition = true;
@@ -25,7 +26,7 @@ const eqObjects = function(object1,object2) {
   return equalCondition;
 };
 
-
+module.exports = eqObjects;
 //Tester calls
 
 // const ab = { a: "1", b: "2" };

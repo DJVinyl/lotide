@@ -1,4 +1,5 @@
-const letterPositions = require('../letterPositions');
+const lotide = require('../index');
+const letterPositions = lotide.letterPositions;
 const assert = require('chai').assert;
 
 console.log(letterPositions("hello world"));

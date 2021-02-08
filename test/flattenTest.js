@@ -1,4 +1,5 @@
-const flatten = require('../flatten');
+const lotide = require('../index');
+const flatten = lotide.flatten;
 const assert = require('chai').assert;
 
 describe("#Flatten", () => {

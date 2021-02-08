@@ -1,4 +1,5 @@
-const tail = require('../tail');
+const lotide = require('../index');
+const tail = lotide.tail;
 const assert = require('chai').assert;
 
 describe("#tail", () => {

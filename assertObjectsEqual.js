@@ -11,21 +11,7 @@ const assertObjectsEqual = function(actual, expected) {
     return console.log(`👎 Assertion failed: ${actual} !== ${expected}`);
   }
 };
-
-const eqArrays = function(actual,expected) {
-  let equalCondition = true;
-  if (actual.length === expected.length) {
-    for (let i = 0; i < actual.length; i++) {
-      if (actual[i] !== expected[i]) {
-        equalCondition = false;
-        break;
-      }
-    }
-  } else {
-    equalCondition = false;
-  }
-  return equalCondition;
-};
+const eqArrays = require('./eqArrays');
 
 const eqObjects = function(object1,object2) {
   let equalCondition = true;
@@ -51,9 +37,10 @@ const eqObjects = function(object1,object2) {
   return equalCondition;
 };
 
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-console.log(eqObjects(ab, ba)); // => true
+// const ab = { a: "1", b: "2" };
+// const ba = { b: "2", a: "1" };
+// console.log(eqObjects(ab, ba)); // => true
 
-const abc = { a: "1", b: "2", c: "3" };
-console.log(eqObjects(ab, abc)); // => false
+// const abc = { a: "1", b: "2", c: "3" };
+// console.log(eqObjects(ab, abc)); // => false
+module.exports = eqObjects;

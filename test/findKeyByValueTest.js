@@ -1,4 +1,6 @@
-const findKeyByValue = require('../findKeyByValue');
+// const findKeyByValue = require('../findKeyByValue');
+const lotide = require('../index');
+const findKeyByValue = lotide.findKeyByValue;
 const assert = require('chai').assert;
 
 const bestTVShowsByGenre = {

@@ -1,4 +1,5 @@
-const takeUntil = require('../takeUntil');
+const lotide = require('../index');
+const takeUntil = lotide.takeUntil;
 const assert = require('chai').assert;
 
 describe("#takeUntil", () => {
